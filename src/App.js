@@ -4,7 +4,8 @@ import Profile from './Profile'; // Importa el componente Profile
 function App() {
   return (
     <div>
-      <Profile /> {/* Utiliza el componente Profile */}
+      <Profile /> { }
+      <Profile /> { }
     </div>
   );
 }

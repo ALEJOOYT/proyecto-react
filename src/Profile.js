@@ -19,7 +19,7 @@ function Profile() {
           <li><a href="#">LinkedIn</a></li>
           <li><a href="#">Twitter</a></li>
           <li><a href="#">Instagram</a></li>
-          <li><h6>SeedProgramming</h6></li> {}
+          <li><h6>SeedProgramming</h6></li> { }
         </ul>
       </div>
     </div>

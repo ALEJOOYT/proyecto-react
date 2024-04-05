@@ -1,11 +1,10 @@
 import React from 'react';
-import Profile from './Profile'; // Importa el componente Profile
+import Tarjeta from './Componentes/Tarjeta';
 
 function App() {
   return (
-    <div>
-      <Profile /> { }
-      <Profile /> { }
+    <div >
+      <Tarjeta/> { }
     </div>
   );
 }

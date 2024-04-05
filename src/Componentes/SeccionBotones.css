@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/fonts/Inter-VariableFont_slnt,wght.ttf');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Blanco: hsl(0, 0%, 100%);
+    --Gris: hsl(0, 0%, 20%);
+    --Gris-Oscuro: hsl(0, 0%, 12%);
+    --Negro-Opaco: hsl(0, 0%, 8%);
+    --Verde: hsl(75, 94%, 57%);
+    --Fuente-Inter: 'Inter', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.redes-sociales a {
+    color: var(--Blanco);
+    display: block;
+    background-color: var(--Gris);
+    padding: 16px 0;
+    font-size: 14px;
+    border-radius: 7px;
+}
+
+.redes-sociales a:hover {
+    transition: all 0.3s;
+    background-color: blue;
+    color: var(--Negro-Opaco);
+    font-weight: 600;
+}
+
+.redes-sociales li:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.seccionBotones h6 {
+    color: var(--Blanco);
+}

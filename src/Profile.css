@@ -87,7 +87,7 @@ p {
 
 #redes-sociales li a:hover {
     transition: all 0.3s;
-    background-color: blue;
+    background-color: rgb(158, 158, 158);
     color: var(--Negro-Opaco);
     font-weight: 600;
 }

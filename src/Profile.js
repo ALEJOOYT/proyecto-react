@@ -1,12 +1,13 @@
 import React from 'react';
 import './Profile.css';
+import foto from "./assets/images/avatar-jessica.jpeg"
 
 function Profile() {
   return (
     <div className="contenedor">
       <div className="tarjeta">
         <figure>
-          <img src="./assets/images/avatar-jessica.jpeg" alt="" />
+          <img src={foto} alt="" />
         </figure>
         <div className="nombre-titulo">
           <h2>Jessica Randall</h2>

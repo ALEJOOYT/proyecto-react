@@ -7,7 +7,7 @@ function Profile() {
     <div className="contenedor">
       <div className="tarjeta">
         <figure>
-          <img src={foto} alt="" />
+          <img src={foto} />
         </figure>
         <div className="nombre-titulo">
           <h2>Jessica Randall</h2>

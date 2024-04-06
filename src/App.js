@@ -3,9 +3,16 @@ import Profile from './Profile'; // Importa el componente Profile
 
 function App() {
   return (
-    <div>
-      <Profile /> { }
-      <Profile /> { }
+    <div className='todo'>
+      <Tarjeta />
+      <Tarjeta />
+      <Tarjeta />
+      <Tarjeta />
+      <Tarjeta />
+      <Tarjeta />
+      <Tarjeta />
+      <Tarjeta />
+      <Tarjeta />
     </div>
   );
 }

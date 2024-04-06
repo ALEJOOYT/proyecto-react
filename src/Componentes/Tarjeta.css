@@ -19,7 +19,7 @@
 }
 
 .contenedor {
-    height: 100%; /* Cambié 10% a 100% para ocupar toda la altura */
+    height: 100%;
     padding: 60px 0;
     display: flex;
     justify-content: center;
@@ -27,11 +27,11 @@
 }
 
 .tarjeta {
-    width: 300px; /* Cambié 3px a 300px para hacer la tarjeta visible */
+    width: 300px;
     background-color: var(--Gris-Oscuro);
     padding: 25px;
     text-align: center;
     border-radius: 10px;
-    margin: 0 auto; /* Cambié margin: 0px auto; a margin: 0 auto; para centrar la tarjeta horizontalmente */
-    color: var(--Blanco); /* Consolidé la regla de estilo de color en una sola regla */
+    margin: 0 auto;
+    color: var(--Blanco);
 }

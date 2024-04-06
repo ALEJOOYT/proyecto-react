@@ -1,5 +1,6 @@
 import React from 'react';
-import Profile from './Profile'; // Importa el componente Profile
+import Tarjeta from './Componentes/Tarjeta';
+import './App.css'
 
 function App() {
   return (

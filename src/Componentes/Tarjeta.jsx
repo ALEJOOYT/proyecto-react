@@ -3,7 +3,6 @@ import DetallesUsuario from './DetallesUsuario';
 import SeccionBotones from './SeccionBotones';
 import './Tarjeta.css';
 
-
 const Tarjeta = () => {
     return (
         <div className='contenedor'>

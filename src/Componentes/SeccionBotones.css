@@ -33,7 +33,7 @@ ul {
 
 .redes-sociales a:hover {
     transition: all 0.3s;
-    background-color: blue;
+    background-color: var(--Verde);
     color: var(--Negro-Opaco);
     font-weight: 600;
 }

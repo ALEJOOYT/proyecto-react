@@ -3,11 +3,12 @@ import DetallesUsuario from './DetallesUsuario';
 import SeccionBotones from './SeccionBotones';
 import './Tarjeta.css';
 
-const Tarjeta = () => {
+const Tarjeta = (props) => {
+    const usuario = props.usuario;
     return (
         <div className='contenedor'>
             <div className='tarjeta'>
-                <DetallesUsuario />
+                <DetallesUsuario usuario={usuario} />
                 <SeccionBotones />
             </div>
         </div>

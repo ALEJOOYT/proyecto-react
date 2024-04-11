@@ -2,17 +2,18 @@ import React from 'react';
 import foto from './assets/images/avatar-jessica.jpeg';
 import './DetallesUsuario.css';
 
-const DetallesUsuario = () => {
+const DetallesUsuario = (props) => {
+    const usuario = props.usuario;
     return (
         <div className="detalle">
             <figure>
-                <img src={foto} alt="Foto de perfil de Jessica Randall" />
+                <img src={usuario.avatar} alt={`Foto de perfil de ${usuario.name}`} />
             </figure>
             <div className="nombre-titulo">
-                <h2>Jessica Randall</h2>
-                <h4>Londres, Reino Unido</h4>
+                <h2>{usuario.name}</h2>
+                <h4>{usuario.location}</h4>
             </div>
-            <p>"Desarrolladora de front-end y ávida lectora."</p>
+            <p>{usuario.description}</p>
         </div>
     );
 };

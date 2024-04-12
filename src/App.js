@@ -5,11 +5,11 @@ import './App.css';
 function App() {
   const [usuarios, setUsuarios] = useState([]);
   useEffect(() => {
-    fetch('https://6617f7f49a41b1b3dfbbda36.mockapi.io/api/v1/prueba')
+    fetch('https://rickandmortyapi.com/api/character')
       .then(respuesta => respuesta.json())
       .then(datos => {
-        setUsuarios(datos);
-        console.log(datos);
+        setUsuarios(datos.results);
+        console.log(datos.results);
       });
   }, []);
 

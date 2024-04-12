@@ -6,11 +6,11 @@ const DetallesUsuario = (props) => {
     return (
         <div className="detalle">
             <figure>
-                <img src={usuario.avatar} alt={`Foto de perfil de ${usuario.name}`} />
+                <img src={usuario.image} alt={`Foto de perfil de ${usuario.name}`} />
             </figure>
             <div className="nombre-titulo">
                 <h2>{usuario.name}</h2>
-                <h4>{usuario.location}</h4>
+                {/* <h4>{usuario.location}</h4>{/* revisar */} 
             </div>
             <p>{usuario.description}</p>
         </div>

@@ -1,5 +1,4 @@
 import React from 'react';
-import foto from './assets/images/avatar-jessica.jpeg';
 import './DetallesUsuario.css';
 
 const DetallesUsuario = (props) => {

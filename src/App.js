@@ -3,15 +3,38 @@ import Tarjeta from './Componentes/Tarjeta';
 import './App.css';
 
 function App() {
+  const [todosPersonajes, setTodosPersonajes] = useState([]);
   const [usuarios, setUsuarios] = useState([]);
+
   useEffect(() => {
-    fetch('https://6617f7f49a41b1b3dfbbda36.mockapi.io/api/v1/prueba')
+    fetch('https://rickandmortyapi.com/api/character')
       .then(respuesta => respuesta.json())
       .then(datos => {
-        setUsuarios(datos);
-        console.log(datos);
+        setTodosPersonajes(datos.results);
+        console.log(datos.results);
       });
   }, []);
+
+  useEffect(() => {
+    if (todosPersonajes.length > 0) {
+      const personajesAleatorios = obtenerPersonajesAleatorios(todosPersonajes, 10);
+      setUsuarios(personajesAleatorios);
+    }
+  }, [todosPersonajes]);
+
+  const obtenerPersonajesAleatorios = (array, n) => {
+    const mezclados = array.sort(() => 0.5 - Math.random());
+    const personajesSeleccionados = [];
+    let i = 0;
+    while (personajesSeleccionados.length < n && i < mezclados.length) {
+      const personaje = mezclados[i];
+      if (!personajesSeleccionados.find(personajeSeleccionado => personajeSeleccionado.id === personaje.id)) {
+        personajesSeleccionados.push(personaje);
+      }
+      i++;
+    }
+    return personajesSeleccionados;
+  };
 
   return (
     <div className='todo'>

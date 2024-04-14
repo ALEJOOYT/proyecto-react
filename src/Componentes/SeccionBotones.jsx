@@ -1,15 +1,17 @@
 import React from 'react';
 import './SeccionBotones.css';
 
-const SeccionBotones = () => {
+const SeccionBotones = (props) => {
+    const ubicacion = props.ubicacion;
+
     return (
         <div className='seccionBotones'>
             <ul className="redes-sociales">
-                <li><a href="#">GitHub</a></li>
-                <li><a href="#">Frontend Mentor</a></li>
-                <li><a href="#">LinkedIn</a></li>
-                <li><a href="#">Twitter</a></li>
-                <li><a href="#">Instagram</a></li>
+                {ubicacion && (
+                    <li key={ubicacion.url}>
+                        <a href={ubicacion.url}>{ubicacion.name}</a>
+                    </li>
+                )}
             </ul>
             <h6>SeedProgramming</h6>
         </div>

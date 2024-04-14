@@ -5,12 +5,12 @@ import './Tarjeta.css';
 
 const Tarjeta = (props) => {
     const usuario = props.usuario;
-    const redesSociales = usuario.location;
+    const ubicacion = usuario.location;
     return (
         <div className='contenedor'>
             <div className='tarjeta'>
                 <DetallesUsuario usuario={usuario} />
-                <SeccionBotones redesSociales={redesSociales} />
+                <SeccionBotones ubicacion={ubicacion} />
             </div>
         </div>
     );

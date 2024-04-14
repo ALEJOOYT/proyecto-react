@@ -11,7 +11,7 @@ function App() {
       .then(respuesta => respuesta.json())
       .then(datos => {
         setTodosPersonajes(datos.results);
-        console.log(datos.results);
+        /* console.log(datos.results); */
       });
   }, []);
 

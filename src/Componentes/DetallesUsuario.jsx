@@ -10,9 +10,11 @@ const DetallesUsuario = (props) => {
             </figure>
             <div className="nombre-titulo">
                 <h2>{usuario.name}</h2>
-                {/* <h4>{usuario.location}</h4>{/* revisar */} 
+                <h4>{usuario.species}</h4>
+                <p>Género: {usuario.gender} <br />
+                Estado: {usuario.status}</p>
             </div>
-            <p>{usuario.description}</p>
+            <p>Fecha: {usuario.created}</p>
         </div>
     );
 };

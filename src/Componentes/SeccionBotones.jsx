@@ -1,9 +1,8 @@
+// SeccionBotones.jsx
 import React from 'react';
 import './SeccionBotones.css';
 
-const SeccionBotones = (props) => {
-    const ubicacion = props.ubicacion;
-
+const SeccionBotones = ({ ubicacion, episodio }) => {
     return (
         <div className='seccionBotones'>
             <ul className="redes-sociales">

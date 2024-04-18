@@ -1,0 +1,24 @@
+/* ListaEpisodios.css */
+
+.episodios-lista {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px 0;
+    margin-top: 10px;
+}
+
+.episodio {
+    flex: 0 0 auto;
+    margin-right: 10px;
+    padding: 10px;
+    background-color: #333333;
+    border-radius: 5px;
+}
+
+.episodio p {
+    margin: 5px 0;
+}
+
+.episodio:last-child {
+    margin-right: 0;
+}

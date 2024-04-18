@@ -1,8 +1,8 @@
+// DetallesUsuario.jsx
 import React from 'react';
 import './DetallesUsuario.css';
 
-const DetallesUsuario = (props) => {
-    const usuario = props.usuario;
+const DetallesUsuario = ({ usuario }) => {
     return (
         <div className="detalle">
             <figure>
@@ -12,7 +12,8 @@ const DetallesUsuario = (props) => {
                 <h2>{usuario.name}</h2>
                 <h4>{usuario.species}</h4>
                 <p>Género: {usuario.gender} <br />
-                Estado: {usuario.status}</p>
+                Estado: {usuario.status} <br />
+                Tipo: {usuario.type}</p>
             </div>
             <p>Fecha: {usuario.created}</p>
         </div>

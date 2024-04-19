@@ -17,13 +17,16 @@
     --Verde: hsl(75, 94%, 57%);
     --Fuente-Inter: 'Inter', sans-serif;
 }
+
 .listaEpisodios {
     display: flex;
     overflow-x: auto;
-    padding: 10px 0;
-    margin-top: 10px;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(17, 17, 17);
+    scrollbar-width: thin;
+    scrollbar-color: var(--Gris) var(--Negro-Opaco);
 }
-
 
 .episodio {
     flex: 0 0 auto;
@@ -33,7 +36,7 @@
     border-radius: 5px;
 }
 
-.episodio:hover{
+.episodio:hover {
     background-color: rgb(27, 27, 27);
 }
 
@@ -43,4 +46,18 @@
 
 .episodio:last-child {
     margin-right: 0;
+}
+
+.listaEpisodios::-webkit-scrollbar {
+    width: 8px;
+}
+
+.listaEpisodios::-webkit-scrollbar-track {
+    background: var(--Negro-Opaco);
+}
+
+.listaEpisodios::-webkit-scrollbar-thumb {
+    background-color: var(--Gris);
+    border-radius: 10px;
+    border: 2px solid var(--Negro-Opaco);
 }

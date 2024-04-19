@@ -29,12 +29,12 @@
 }
 
 .tarjeta {
-    width: 300px;
+    width: 400px;
     background-color: var(--Gris-Oscuro);
     padding: 25px;
     text-align: center;
     border-radius: 10px;
-    margin: 0 auto;
+    margin: 10px auto;
     color: var(--Blanco);
 }
 

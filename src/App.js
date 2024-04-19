@@ -7,12 +7,13 @@ function App() {
     const [usuarios, setUsuarios] = useState([]);
 
     useEffect(() => {
-        fetch('https://rickandmortyapi.com/api/character')
+        const paginaAleatoria = Math.floor(Math.random() * 43);
+        fetch(`https://rickandmortyapi.com/api/character/?page=${paginaAleatoria}`)
             .then(respuesta => respuesta.json())
             .then(datos => {
                 setTodosPersonajes(datos.results);
             })
-            .catch(error => console.error('Error fetching characters:', error));
+            .catch(error => console.error('Error:', error));
     }, []);
 
     useEffect(() => {
@@ -22,6 +23,13 @@ function App() {
         }
     }, [todosPersonajes]);
 
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth" // Esto proporciona un desplazamiento suave
+        });
+    };
+
     const obtenerPersonajesAleatorios = (array, n) => {
         const mezclados = array.sort(() => 0.5 - Math.random());
         return mezclados.slice(0, n);
@@ -29,6 +37,7 @@ function App() {
 
     return (
         <div className='todo'>
+            <button onClick={scrollToTop}>Ir al inicio</button>
             {usuarios.map(usuario => (<Tarjeta key={usuario.id} usuario={usuario} />))}
         </div>
     );

@@ -37,3 +37,7 @@
     margin: 0 auto;
     color: var(--Blanco);
 }
+
+.tarjeta:hover{
+    background-color: rgb(39, 39, 39);
+}

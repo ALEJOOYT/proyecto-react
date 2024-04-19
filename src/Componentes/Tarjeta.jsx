@@ -1,9 +1,8 @@
-// Tarjeta.jsx
 import React, { useState, useEffect } from 'react';
+import './Tarjeta.css';
 import DetallesUsuario from './DetallesUsuario';
 import SeccionBotones from './SeccionBotones';
 import ListaEpisodios from './ListaEpisodios';
-import './Tarjeta.css';
 
 const Tarjeta = ({ usuario }) => {
     const [mostrarEpisodios, setMostrarEpisodios] = useState(false);
@@ -11,7 +10,6 @@ const Tarjeta = ({ usuario }) => {
 
     useEffect(() => {
         if (mostrarEpisodios) {
-            // Obtener información de los episodios
             Promise.all(usuario.episode.map(ep => fetch(ep).then(res => res.json())))
                 .then(data => setEpisodios(data))
                 .catch(error => console.error('Error fetching episodes:', error));

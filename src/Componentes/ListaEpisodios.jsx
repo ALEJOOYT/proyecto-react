@@ -1,4 +1,3 @@
-// ListaEpisodios.jsx
 import React from 'react';
 import './ListaEpisodio.css';
 
@@ -6,7 +5,7 @@ const ListaEpisodios = ({ episodios }) => {
     return (
         <div>
             <h4>Episodios: </h4>
-            <div className="episodios-lista">
+            <div className="listaEpisodios">
                 {episodios.map(episodio => (
                     <div key={episodio.id} className="episodio">
                         <p>{episodio.name}</p>

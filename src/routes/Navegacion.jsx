@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import RickAndMorty from '../RickAndMorty'
+import RickAndMorty from '../RickAndMortySpa'
 import Tarjeta from '../Componentes1/Tarjeta'
 
 const Navegacion = () => {

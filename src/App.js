@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Navegacion from "./routes/Navegacion"
+import Navegacion from "./routes/Navegacion.jsx"
 
 function App() {
     return (

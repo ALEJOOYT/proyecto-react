@@ -1,18 +1,20 @@
 import React from 'react';
 import './DetallesUsuario.css';
 
-const DetallesUsuario = (props) => {
-    const usuario = props.usuario;
+const DetallesUsuario = ({ usuario }) => {
     return (
-        <div className="detalle">
+        <div>
             <figure>
-                <img src={usuario.avatar} alt={`Foto de perfil de ${usuario.name}`} />
+                <img src={usuario.image} alt={`Foto de perfil de ${usuario.name}`} />
             </figure>
-            <div className="nombre-titulo">
+            <div>
                 <h2>{usuario.name}</h2>
-                <h4>{usuario.location}</h4>
+                <h4>{usuario.species}</h4>
+                <p>Género: {usuario.gender} <br />
+                    Estado: {usuario.status} <br />
+                    Tipo: {usuario.type}</p>
             </div>
-            <p>{usuario.description}</p>
+            <p>Fecha: {usuario.created}</p>
         </div>
     );
 };

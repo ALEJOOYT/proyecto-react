@@ -22,23 +22,24 @@ ul {
     list-style-type: none;
 }
 
-.redes-sociales a {
+.redesSociales a {
     color: var(--Blanco);
     display: block;
     background-color: var(--Gris);
     padding: 16px 0;
     font-size: 14px;
     border-radius: 7px;
+    margin: 10px;
 }
 
-.redes-sociales a:hover {
+.redesSociales a:hover {
     transition: all 0.3s;
     background-color: var(--Verde);
     color: var(--Negro-Opaco);
     font-weight: 600;
 }
 
-.redes-sociales li:not(:last-child) {
+.redesSociales li:not(:last-child) {
     margin-bottom: 16px;
 }
 

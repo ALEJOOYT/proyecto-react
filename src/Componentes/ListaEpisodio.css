@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/fonts/Inter-VariableFont_slnt,wght.ttf');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Blanco: hsl(0, 0%, 100%);
+    --Gris: hsl(0, 0%, 20%);
+    --Gris-Oscuro: hsl(0, 0%, 12%);
+    --Negro-Opaco: hsl(0, 0%, 8%);
+    --Verde: hsl(75, 94%, 57%);
+    --Fuente-Inter: 'Inter', sans-serif;
+}
+.listaEpisodios {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px 0;
+    margin-top: 10px;
+}
+
+
+.episodio {
+    flex: 0 0 auto;
+    margin-right: 10px;
+    padding: 10px;
+    background-color: #333333;
+    border-radius: 5px;
+}
+
+.episodio:hover{
+    background-color: rgb(27, 27, 27);
+}
+
+.episodio p {
+    margin: 5px 0;
+}
+
+.episodio:last-child {
+    margin-right: 0;
+}

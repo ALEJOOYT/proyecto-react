@@ -19,8 +19,10 @@
 }
 
 .contenedor {
+    margin-left: 20px;
+    margin-right: 20px;
     height: 100%;
-    padding: 60px 0;
+    padding: 20px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,4 +36,8 @@
     border-radius: 10px;
     margin: 0 auto;
     color: var(--Blanco);
+}
+
+.tarjeta:hover{
+    background-color: rgb(39, 39, 39);
 }

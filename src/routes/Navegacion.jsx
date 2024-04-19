@@ -1,7 +1,7 @@
 import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import RickAndMorty from '../RickAndMorty'
-import Tarjeta from '../Componentes/Tarjeta'
+import Tarjeta from '../Componentes1/Tarjeta'
 
 const Navegacion = () => {
     return (

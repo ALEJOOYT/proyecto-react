@@ -1,5 +1,5 @@
 import React from 'react';
-import './DetallesUsuario.css';
+import './DetallesUsuarioEpisodios.css';
 
 const DetallesUsuario = ({ usuario }) => {
     let estadoColor = '';

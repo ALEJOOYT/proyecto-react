@@ -1,5 +1,5 @@
 import React from 'react';
-import './SeccionBotones.css';
+import './SeccionBotonesInicio.css';
 
 const SeccionBotones = (props) => {
     const ubicacion = props.ubicacion;

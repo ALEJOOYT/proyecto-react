@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import './Tarjeta.css';
-import DetallesUsuario from './DetallesUsuario';
-import SeccionBotones from './SeccionBotones';
+import './TarjetaEpisodios.css';
+import DetallesUsuario from './DetallesUsuarioEpisodios';
+import SeccionBotones from './SeccionBotonesEpisodios';
 import ListaEpisodios from './ListaEpisodios';
 
 const Tarjeta = ({ usuario }) => {

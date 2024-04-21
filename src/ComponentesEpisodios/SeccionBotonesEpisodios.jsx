@@ -1,14 +1,19 @@
 import React from 'react';
-import './SeccionBotones.css';
+import './SeccionBotonesEpisodios.css';
+import { NavLink } from 'react-router-dom';
 
 const SeccionBotones = ({ ubicacion, episodio }) => {
     return (
         <div className='seccionBotones'>
             <ul className="redesSociales">
                 {ubicacion && (
-                    <li key={ubicacion.url}>
-                        <a href={ubicacion.url}>{ubicacion.name}</a>
-                    </li>
+                    <NavLink to={`/`} className='Inicio'>
+                        <li>
+                            <button>Inicio</button>
+                        </li>
+                    </NavLink>
+
+
                 )}
             </ul>
             <h6>SeedProgramming</h6>

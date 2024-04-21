@@ -1,5 +1,5 @@
 import React from 'react';
-import './DetallesUsuario.css';
+import './DetallesUsuarioInicio.css';
 
 const DetallesUsuario = (props) => {
     const usuario = props.usuario;

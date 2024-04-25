@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './TarjetaEpisodios.css';
-import DetallesUsuario from './DetallesUsuarioEpisodios';
-import SeccionBotones from './SeccionBotonesEpisodios';
-import ListaEpisodios from './ListaEpisodios';
+import DetallesUsuarioEpisodios from './DetallesUsuarioEpisodios';
+import SeccionBotonesEpisodios from './SeccionBotonesEpisodios';
+import ListaEpisodiosEpisodios from './ListaEpisodios';
 
 const Tarjeta = ({ usuario }) => {
     const [episodios, setEpisodios] = useState([]);
@@ -15,9 +15,9 @@ const Tarjeta = ({ usuario }) => {
 
     return (
         <div className='tarjeta'>
-            <DetallesUsuario usuario={usuario} />
-            <ListaEpisodios episodios={episodios} />
-            <SeccionBotones ubicacion={usuario.location} episodio={usuario.episode} />
+            <DetallesUsuarioEpisodios usuario={usuario} />
+            <ListaEpisodiosEpisodios episodios={episodios} />
+            <SeccionBotonesEpisodios ubicacion={usuario.location} episodio={usuario.episode} />
         </div>
     );
 };

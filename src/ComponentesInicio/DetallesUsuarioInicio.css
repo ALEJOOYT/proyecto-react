@@ -1,14 +1,3 @@
-@font-face {
-    font-family: 'Inter';
-    src: url('../assets/fonts/Inter-VariableFont_slnt,wght.ttf');
-}
-
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
 :root {
     --Blanco: hsl(0, 0%, 100%);
     --Gris: hsl(0, 0%, 20%);
@@ -18,30 +7,39 @@
     --Fuente-Inter: 'Inter', sans-serif;
 }
 
-figure img {
-    width: 100%;
-    height: auto;
-    border-radius: 5%;
+.detalleInicio{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
 }
 
-h2,
-h4,
-p {
+.detalleInicio figure img {
+    height: 100%;
+    width: auto;
+}
+
+.detalleInicio .nombreTituloInicio{
+    width: 100%;
+    margin: 5%;
+    text-align: start;
+}
+
+.detalleInicio .nombreTituloInicio h2,
+.detalleInicio .nombreTituloInicio h4,
+.detalleInicio .nombreTituloInicio p {
     font-weight: 400;
 }
 
-h2,
-p {
+.detalleInicio .nombreTituloInicio h2,
+.detalleInicio .nombreTituloInicio p {
     color: var(--Blanco);
 }
 
-h4 {
+.detalleInicio .nombreTituloInicio h4 {
     color: var(--Verde);
     font-size: 14px;
-    margin: 7px 0;
 }
 
-p {
+.detalleInicio .nombreTituloInicio p {
     font-size: 14px;
-    margin: 25px 0;
 }

@@ -2,19 +2,19 @@ import React, { useEffect, useState } from 'react';
 import Tarjeta from './ComponentesInicio/TarjetaInicio.jsx';
 import './App.css';
 
-function App() {
+function Inicio() {
   const [todosPersonajes, setTodosPersonajes] = useState([]);
   const [usuarios, setUsuarios] = useState([]);
 
   useEffect(() => {
     const paginaAleatoria = Math.floor(Math.random() * 43);
     fetch(`https://rickandmortyapi.com/api/character/?page=${paginaAleatoria}`)
-        .then(respuesta => respuesta.json())
-        .then(datos => {
-            setTodosPersonajes(datos.results);
-        })
-        .catch(error => console.error('Error:', error));
-}, []);
+      .then(respuesta => respuesta.json())
+      .then(datos => {
+        setTodosPersonajes(datos.results);
+      })
+      .catch(error => console.error('Error:', error));
+  }, []);
 
   useEffect(() => {
     if (todosPersonajes.length > 0) {
@@ -37,11 +37,19 @@ function App() {
     return personajesSeleccionados;
   };
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
+
   return (
     <div className='todo'>
+      <button onClick={scrollToTop}>Ir al inicio</button>
       {usuarios.map(usuario => (<Tarjeta key={usuario.id} usuario={usuario} />))}
     </div>
   );
 }
 
-export default App;
+export default Inicio;

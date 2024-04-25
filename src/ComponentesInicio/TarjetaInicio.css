@@ -7,6 +7,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font: var(--Fuente-Inter);
 }
 
 :root {
@@ -18,7 +19,7 @@
     --Fuente-Inter: 'Inter', sans-serif;
 }
 
-.contenedor {
+.contenedorInicio {
     margin-left: 20px;
     margin-right: 20px;
     height: 100%;
@@ -28,16 +29,14 @@
     align-items: center;
 }
 
-.tarjeta {
-    width: 400px;
+.contenedorInicio .tarjetaInicio {
+    height: 160px;
+    width: 350px;
     background-color: var(--Gris-Oscuro);
-    padding: 25px;
-    text-align: center;
     border-radius: 10px;
-    margin: 10px auto;
     color: var(--Blanco);
 }
 
-.tarjeta:hover{
+.contenedorInicio .tarjetaInicio:hover{
     background-color: rgb(39, 39, 39);
 }

@@ -7,9 +7,9 @@ const Tarjeta = ({ usuario }) => {
     const idTarjeta = usuario.id;
 
     return (
-        <div className='contenedorInicio'>
-            <NavLink to={`/episodios?id=${idTarjeta}`} className="enlaceTarjetaInicio">
-                <div className='tarjetaInicio'>
+        <div className='contenedor-inicio'>
+            <NavLink to={`/episodios?id=${idTarjeta}`} className="enlace-tarjeta-inicio">
+                <div className='tarjeta-inicio'>
                     <DetallesUsuarioInicio usuario={usuario} />
                 </div>
             </NavLink>

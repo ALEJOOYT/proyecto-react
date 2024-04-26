@@ -5,11 +5,11 @@ import { NavLink } from 'react-router-dom';
 const SeccionBotones = ({ ubicacion, episodio }) => {
 
     return (
-        <div className='seccionBotones'>
-            <ul className="redesSociales">
+        <div className='seccion-botones-episodios'>
+            <ul className="botones-informacion">
                 {ubicacion && (
-                    <li key="inicio" className='redesSociales-item'>
-                        <NavLink to={`/`} className='redesSociales-link Inicio'>
+                    <li key="inicio" className='botones-informacion-item'>
+                        <NavLink to={`/`} className='botones-informacion-link Inicio'>
                             Inicio
                         </NavLink>
                     </li>

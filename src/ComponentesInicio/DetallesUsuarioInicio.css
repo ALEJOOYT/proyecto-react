@@ -8,40 +8,52 @@
 }
 
 /* Estilos del detalle de usuario en la página de inicio */
-.detalleInicio {
+.detalle-inicio {
     height: 100%;
     display: flex;
     flex-direction: row;
 }
 
-.detalleInicio figure img {
+.detalle-inicio figure img {
     height: 100%;
     width: auto;
     border-radius: 5%;
 }
 
-.detalleInicio .nombreTituloInicio {
+.detalle-inicio .nombre-titulo-inicio {
     width: 100%;
     margin: 5%;
     text-align: start;
 }
 
-.detalleInicio .nombreTituloInicio h2,
-.detalleInicio .nombreTituloInicio h4,
-.detalleInicio .nombreTituloInicio p {
+.detalle-inicio .nombre-titulo-inicio h2,
+.detalle-inicio .nombre-titulo-inicio h4,
+.detalle-inicio .nombre-titulo-inicio p {
     font-weight: 400;
 }
 
-.detalleInicio .nombreTituloInicio h2,
-.detalleInicio .nombreTituloInicio p {
+.detalle-inicio .nombre-titulo-inicio h2,
+.detalle-inicio .nombre-titulo-inicio p {
     color: var(--Blanco);
 }
 
-.detalleInicio .nombreTituloInicio h4 {
+.detalle-inicio .nombre-titulo-inicio h4 {
     color: var(--Verde);
     font-size: 14px;
 }
 
-.detalleInicio .nombreTituloInicio p {
+.detalle-inicio .nombre-titulo-inicio p {
     font-size: 14px;
+}
+
+.detalles-inicio .nombre-titulo-inicio .estado-green {
+    color: green;
+}
+
+.detalles-inicio .nombre-titulo-inicio .estado-red {
+    color: red;
+}
+
+.detalles-inicio .nombre-titulo-inicio .estado-lightblue {
+    color: lightblue;
 }

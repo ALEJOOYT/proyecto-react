@@ -8,24 +8,27 @@
     --Fuente-Inter: 'Inter', sans-serif;
 }
 
-/* Reset */
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
 /* Estilos de la lista */
-ul {
+.seccion-botones-episodios ul {
     list-style-type: none;
 }
 
+/* Estilos del título */
+.seccion-botones-episodios h6 {
+    color: var(--Blanco);
+}
+
+/* Estilos generales de botón */
+.seccion-botones-episodios button {
+    text-decoration: none;
+}
+
 /* Estilos de los enlaces */
-.redesSociales .redesSociales-item {
+.seccion-botones-episodios .botones-informacion .botones-informacion-item {
     margin-bottom: 16px;
 }
 
-.redesSociales .redesSociales-link {
+.seccion-botones-episodios .botones-informacion .botones-informacion-link {
     color: var(--Blanco);
     display: block;
     background-color: var(--Gris);
@@ -37,18 +40,8 @@ ul {
     transition: all 0.3s;
 }
 
-.redesSociales .redesSociales-link:hover {
+.seccion-botones-episodios .botones-informacion .botones-informacion-link:hover {
     background-color: var(--Verde);
     color: var(--Negro-Opaco);
     font-weight: 600;
-}
-
-/* Estilos del título */
-.seccionBotones h6 {
-    color: var(--Blanco);
-}
-
-/* Estilos generales de botón */
-button {
-    text-decoration: none;
 }

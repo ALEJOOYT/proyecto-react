@@ -5,7 +5,7 @@ const ListaEpisodios = ({ episodios }) => {
     return (
         <div>
             <h4>Episodios: </h4>
-            <div className="listaEpisodios">
+            <div className="lista-episodios">
                 {episodios.map(episodio => (
                     <div key={episodio.id} className="episodio">
                         <p>{episodio.name}</p>

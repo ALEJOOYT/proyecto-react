@@ -21,17 +21,6 @@
     font: var(--Fuente-Inter);
 }
 
-/* Contenedor principal */
-.contenedor {
-    margin-left: 20px;
-    margin-right: 20px;
-    height: 100%;
-    padding: 20px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 /* Estilos de la tarjeta */
 .tarjeta {
     width: 400px;

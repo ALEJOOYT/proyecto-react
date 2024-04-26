@@ -6,11 +6,11 @@ const DetallesUsuario = ({ usuario }) => {
     const tipo = usuario.type || 'desconocido';
 
     return (
-        <div className="detalles-usuario">
+        <div className="detalles-episodio">
             <figure>
                 <img src={usuario.image} alt={`Foto de perfil de ${usuario.name}`} />
             </figure>
-            <div>
+            <div className='nombre-titulo-episodio'>
                 <h4>{usuario.name}</h4>
                 <p>Especie: {usuario.species} <br />
                     Género: {usuario.gender} <br />

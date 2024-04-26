@@ -22,7 +22,7 @@
 }
 
 /* Contenedor de la tarjeta */
-.contenedorInicio {
+.contenedor-inicio {
     margin-left: 20px;
     margin-right: 20px;
     height: 100%;
@@ -32,8 +32,14 @@
     align-items: center;
 }
 
+/* Estilos del enlace de la tarjeta */
+.contenedor-inicio .enlace-tarjeta-inicio {
+    text-decoration: none;
+    color: inherit;
+}
+
 /* Estilos de la tarjeta */
-.tarjetaInicio {
+.contenedor-inicio .enlace-tarjeta-inicio .tarjeta-inicio {
     height: 160px;
     width: 350px;
     background-color: var(--Gris-Oscuro);
@@ -42,12 +48,6 @@
     transition: background-color 0.3s ease;
 }
 
-.tarjetaInicio:hover {
+.contenedor-inicio .enlace-tarjeta-inicio .tarjeta-inicio:hover {
     background-color: rgb(39, 39, 39);
-}
-
-/* Estilos del enlace de la tarjeta */
-.enlaceTarjetaInicio {
-    text-decoration: none;
-    color: inherit;
 }

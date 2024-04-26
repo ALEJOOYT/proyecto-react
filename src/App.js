@@ -1,5 +1,5 @@
 import React from 'react';
-import Navegacion from "./routes/Navegacion.jsx"
+import Navegacion from "./rutas/Navegacion.jsx"
 
 function App() {
     return (

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Tarjeta from './ComponentesInicio/TarjetaInicio.jsx';
-import './App.css';
+import './inicio.css';
 
 function Inicio() {
   const [todosPersonajes, setTodosPersonajes] = useState([]);

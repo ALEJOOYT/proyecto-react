@@ -3,12 +3,7 @@
     src: url('../assets/fonts/Inter-VariableFont_slnt,wght.ttf');
 }
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
+/* Variables */
 :root {
     --Blanco: hsl(0, 0%, 100%);
     --Gris: hsl(0, 0%, 20%);
@@ -18,6 +13,15 @@
     --Fuente-Inter: 'Inter', sans-serif;
 }
 
+/* Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font: var(--Fuente-Inter);
+}
+
+/* Contenedor principal */
 .contenedor {
     margin-left: 20px;
     margin-right: 20px;
@@ -28,6 +32,7 @@
     align-items: center;
 }
 
+/* Estilos de la tarjeta */
 .tarjeta {
     width: 400px;
     background-color: var(--Gris-Oscuro);
@@ -36,8 +41,9 @@
     border-radius: 10px;
     margin: 10px auto;
     color: var(--Blanco);
+    transition: background-color 0.3s ease;
 }
 
-.tarjeta:hover{
+.tarjeta:hover {
     background-color: rgb(39, 39, 39);
 }

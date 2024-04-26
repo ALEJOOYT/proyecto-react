@@ -3,14 +3,16 @@ import './SeccionBotonesEpisodios.css';
 import { NavLink } from 'react-router-dom';
 
 const SeccionBotones = ({ ubicacion, episodio }) => {
-    
+
     return (
         <div className='seccionBotones'>
             <ul className="redesSociales">
                 {ubicacion && (
-                    <NavLink to={`/`} className='Inicio'>
-                        Inicio
-                    </NavLink>
+                    <li key="inicio" className='redesSociales-item'>
+                        <NavLink to={`/`} className='redesSociales-link Inicio'>
+                            Inicio
+                        </NavLink>
+                    </li>
                 )}
             </ul>
             <h6>SeedProgramming</h6>

@@ -1,14 +1,4 @@
-@font-face {
-    font-family: 'Inter';
-    src: url('../assets/fonts/Inter-VariableFont_slnt,wght.ttf');
-}
-
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
+/* Colores personalizados */
 :root {
     --Blanco: hsl(0, 0%, 100%);
     --Gris: hsl(0, 0%, 20%);
@@ -18,30 +8,38 @@
     --Fuente-Inter: 'Inter', sans-serif;
 }
 
-figure img {
+/* Estilos del componente */
+.detalles-usuario {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.detalles-usuario figure img {
     width: 100%;
     height: auto;
     border-radius: 5%;
 }
 
-h2,
-h4,
-p {
-    font-weight: 400;
-}
-
-h2,
-p {
-    color: var(--Blanco);
-}
-
-h4 {
+.detalles-usuario h4 {
     color: var(--Verde);
     font-size: 20px;
     margin: 7px 0;
 }
 
-p {
+.detalles-usuario p {
     font-size: 14px;
     margin: 25px 0;
+}
+
+.estado-green {
+    color: green;
+}
+
+.estado-red {
+    color: red;
+}
+
+.estado-lightblue {
+    color: lightblue;
 }

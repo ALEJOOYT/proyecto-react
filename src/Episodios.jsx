@@ -6,7 +6,6 @@ function Episodios() {
     const [personaje, setPersonaje] = useState(null);
 
     useEffect(() => {
-        // Extraer el parámetro 'id' de la URL
         const urlParams = new URLSearchParams(window.location.search);
         const id = urlParams.get('id');
         fetch(`https://rickandmortyapi.com/api/character/${id}`)

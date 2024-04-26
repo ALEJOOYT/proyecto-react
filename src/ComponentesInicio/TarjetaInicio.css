@@ -3,13 +3,7 @@
     src: url('../assets/fonts/Inter-VariableFont_slnt,wght.ttf');
 }
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font: var(--Fuente-Inter);
-}
-
+/* Variables */
 :root {
     --Blanco: hsl(0, 0%, 100%);
     --Gris: hsl(0, 0%, 20%);
@@ -19,6 +13,15 @@
     --Fuente-Inter: 'Inter', sans-serif;
 }
 
+/* Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font: var(--Fuente-Inter);
+}
+
+/* Contenedor de la tarjeta */
 .contenedorInicio {
     margin-left: 20px;
     margin-right: 20px;
@@ -29,14 +32,22 @@
     align-items: center;
 }
 
-.contenedorInicio .tarjetaInicio {
+/* Estilos de la tarjeta */
+.tarjetaInicio {
     height: 160px;
     width: 350px;
     background-color: var(--Gris-Oscuro);
     border-radius: 10px;
     color: var(--Blanco);
+    transition: background-color 0.3s ease;
 }
 
-.contenedorInicio .tarjetaInicio:hover{
+.tarjetaInicio:hover {
     background-color: rgb(39, 39, 39);
+}
+
+/* Estilos del enlace de la tarjeta */
+.enlaceTarjetaInicio {
+    text-decoration: none;
+    color: inherit;
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import RickAndMorty from '../Episodios.jsx'
+import Episodios from '../Episodios.jsx'
 import Inicio from '../inicio.jsx'
 
 const Navegacion = () => {
@@ -8,7 +8,7 @@ const Navegacion = () => {
         <BrowserRouter>
             <Routes>
                 <Route path='/' element={<Inicio/>} />
-                <Route path='/episodios' element={<RickAndMorty/>} />
+                <Route path='/episodios' element={<Episodios/>} />
             </Routes>
         </BrowserRouter>
     )

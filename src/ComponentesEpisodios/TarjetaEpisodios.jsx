@@ -8,9 +8,16 @@ const Tarjeta = ({ usuario }) => {
     const [episodios, setEpisodios] = useState([]);
 
     useEffect(() => {
-        Promise.all(usuario.episode.map(ep => fetch(ep).then(res => res.json())))
-            .then(data => setEpisodios(data))
-            .catch(error => console.error('Error:', error));
+        const fetchEpisodes = async () => {
+            try {
+                const episodesData = await Promise.all(usuario.episode.map(ep => fetch(ep).then(res => res.json())));
+                setEpisodios(episodesData);
+            } catch (error) {
+                console.error('Error fetching episodes:', error);
+            }
+        };
+
+        fetchEpisodes();
     }, [usuario.episode]);
 
     return (

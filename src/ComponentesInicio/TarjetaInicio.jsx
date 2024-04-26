@@ -3,13 +3,12 @@ import { NavLink } from 'react-router-dom';
 import DetallesUsuarioInicio from './DetallesUsuarioInicio';
 import './TarjetaInicio.css';
 
-const Tarjeta = (props) => {
-    const usuario = props.usuario;
+const Tarjeta = ({ usuario }) => {
     const idTarjeta = usuario.id;
 
     return (
         <div className='contenedorInicio'>
-            <NavLink to={`/episodios?id=${idTarjeta}`}>
+            <NavLink to={`/episodios?id=${idTarjeta}`} className="enlaceTarjetaInicio">
                 <div className='tarjetaInicio'>
                     <DetallesUsuarioInicio usuario={usuario} />
                 </div>

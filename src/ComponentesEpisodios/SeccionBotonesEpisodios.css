@@ -1,14 +1,4 @@
-@font-face {
-    font-family: 'Inter';
-    src: url('../assets/fonts/Inter-VariableFont_slnt,wght.ttf');
-}
-
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
+/* Variables */
 :root {
     --Blanco: hsl(0, 0%, 100%);
     --Gris: hsl(0, 0%, 20%);
@@ -18,11 +8,24 @@
     --Fuente-Inter: 'Inter', sans-serif;
 }
 
+/* Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos de la lista */
 ul {
     list-style-type: none;
 }
 
-.redesSociales a {
+/* Estilos de los enlaces */
+.redesSociales .redesSociales-item {
+    margin-bottom: 16px;
+}
+
+.redesSociales .redesSociales-link {
     color: var(--Blanco);
     display: block;
     background-color: var(--Gris);
@@ -30,23 +33,22 @@ ul {
     font-size: 14px;
     border-radius: 7px;
     margin: 10px;
+    text-decoration: none;
+    transition: all 0.3s;
 }
 
-.redesSociales a:hover {
-    transition: all 0.3s;
+.redesSociales .redesSociales-link:hover {
     background-color: var(--Verde);
     color: var(--Negro-Opaco);
     font-weight: 600;
 }
 
-.redesSociales li:not(:last-child) {
-    margin-bottom: 16px;
-}
-
+/* Estilos del título */
 .seccionBotones h6 {
     color: var(--Blanco);
 }
 
+/* Estilos generales de botón */
 button {
     text-decoration: none;
 }

@@ -7,7 +7,8 @@
     --Fuente-Inter: 'Inter', sans-serif;
 }
 
-.detalleInicio{
+/* Estilos del detalle de usuario en la página de inicio */
+.detalleInicio {
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -16,9 +17,10 @@
 .detalleInicio figure img {
     height: 100%;
     width: auto;
+    border-radius: 5%;
 }
 
-.detalleInicio .nombreTituloInicio{
+.detalleInicio .nombreTituloInicio {
     width: 100%;
     margin: 5%;
     text-align: start;

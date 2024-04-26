@@ -2,17 +2,11 @@ import React from 'react';
 import './DetallesUsuarioEpisodios.css';
 
 const DetallesUsuario = ({ usuario }) => {
-    let estadoColor = '';
-    if (usuario.status === 'Alive') {
-        estadoColor = 'green';
-    } else if (usuario.status === 'unknown') {
-        estadoColor = 'lightblue';
-    } else if (usuario.status === 'Dead') {
-        estadoColor = 'red';
-    }
+    const estadoColor = usuario.status === 'Alive' ? 'green' : usuario.status === 'Dead' ? 'red' : 'lightblue';
+    const tipo = usuario.type || 'desconocido';
 
     return (
-        <div>
+        <div className="detalles-usuario">
             <figure>
                 <img src={usuario.image} alt={`Foto de perfil de ${usuario.name}`} />
             </figure>
@@ -20,8 +14,8 @@ const DetallesUsuario = ({ usuario }) => {
                 <h4>{usuario.name}</h4>
                 <p>Especie: {usuario.species} <br />
                     Género: {usuario.gender} <br />
-                    Estado: <span style={{ color: estadoColor }}>{usuario.status}</span> <br />
-                    Tipo: {usuario.type ? usuario.type : 'desconocido'}</p>
+                    Estado: <span className={`estado-${estadoColor}`}>{usuario.status}</span> <br />
+                    Tipo: {tipo}</p>
             </div>
         </div>
     );

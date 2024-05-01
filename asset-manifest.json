@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.6517a440.css",
-    "main.js": "/static/js/main.bb2309b4.js",
-    "static/js/453.f44bac6c.chunk.js": "/static/js/453.f44bac6c.chunk.js",
-    "static/media/Inter-VariableFont_slnt,wght.ttf": "/static/media/Inter-VariableFont_slnt,wght.1a94edac08397e971d22.ttf",
-    "index.html": "/index.html",
-    "main.6517a440.css.map": "/static/css/main.6517a440.css.map",
-    "main.bb2309b4.js.map": "/static/js/main.bb2309b4.js.map",
-    "453.f44bac6c.chunk.js.map": "/static/js/453.f44bac6c.chunk.js.map"
+    "main.css": "/proyecto-react/static/css/main.70056480.css",
+    "main.js": "/proyecto-react/static/js/main.a4e079d1.js",
+    "static/js/453.f44bac6c.chunk.js": "/proyecto-react/static/js/453.f44bac6c.chunk.js",
+    "static/media/Inter-VariableFont_slnt,wght.ttf": "/proyecto-react/static/media/Inter-VariableFont_slnt,wght.1a94edac08397e971d22.ttf",
+    "index.html": "/proyecto-react/index.html",
+    "main.70056480.css.map": "/proyecto-react/static/css/main.70056480.css.map",
+    "main.a4e079d1.js.map": "/proyecto-react/static/js/main.a4e079d1.js.map",
+    "453.f44bac6c.chunk.js.map": "/proyecto-react/static/js/453.f44bac6c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6517a440.css",
-    "static/js/main.bb2309b4.js"
+    "static/css/main.70056480.css",
+    "static/js/main.a4e079d1.js"
   ]
 }

@@ -33,6 +33,11 @@
     background-color: rgb(27, 27, 27);
 }
 
+.lista-episodios .episodio .nombre-episodio {
+    font-size: 20px;
+    color: var(--Verde);
+}
+
 .lista-episodios .episodio p {
     margin: 5px 0;
 }

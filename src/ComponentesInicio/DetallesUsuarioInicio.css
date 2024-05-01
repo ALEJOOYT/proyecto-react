@@ -26,19 +26,21 @@
     text-align: start;
 }
 
-.detalle-inicio .nombre-titulo-inicio h2,
 .detalle-inicio .nombre-titulo-inicio h4,
 .detalle-inicio .nombre-titulo-inicio p {
     font-weight: 400;
 }
 
-.detalle-inicio .nombre-titulo-inicio h2,
+.detalle-inicio .nombre-titulo-inicio h2 {
+    color: var(--Verde);
+    font-size: 15px;
+    margin-bottom: 10%;
+}
 .detalle-inicio .nombre-titulo-inicio p {
     color: var(--Blanco);
 }
 
 .detalle-inicio .nombre-titulo-inicio h4 {
-    color: var(--Verde);
     font-size: 14px;
 }
 

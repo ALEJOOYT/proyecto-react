@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Tarjeta from './ComponentesInicio/TarjetaInicio.jsx';
+import PiePagina from './ComponentesGenerales/PiePagina.jsx';
 import './inicio.css';
 
 function Inicio() {
@@ -80,24 +81,27 @@ function Inicio() {
   };
 
   return (
-    <div className='todo'>
-      <div className="dropdowns">
-        <select value={ordenSeleccionado} onChange={handleChangeOrden}>
-          <option value="Aleatorio">Aleatorio</option>
-          <option value="ID">Ordenar por ID</option>
-          <option value="Nombre A-Z">Nombre A-Z</option>
-          <option value="Nombre Z-A">Nombre Z-A</option>
-        </select>
-        <input
-          type="number"
-          value={caracteresAMostrar}
-          onChange={handleChangeCantidadPersonajes}
-          min="1"
-          step="1"
-        />
+    <div>
+      <div className='todo'>
+        <div className="dropdowns">
+          <select value={ordenSeleccionado} onChange={handleChangeOrden}>
+            <option value="Aleatorio">Aleatorio</option>
+            <option value="ID">Ordenar por ID</option>
+            <option value="Nombre A-Z">Nombre A-Z</option>
+            <option value="Nombre Z-A">Nombre Z-A</option>
+          </select>
+          <input
+            type="number"
+            value={caracteresAMostrar}
+            onChange={handleChangeCantidadPersonajes}
+            min="1"
+            step="1"
+          />
+        </div>
+        <button onClick={scrollToTop}>Ir al inicio</button>
+        {usuarios.map(usuario => (<Tarjeta key={usuario.id} usuario={usuario} />))}
       </div>
-      <button onClick={scrollToTop}>Ir al inicio</button>
-      {usuarios.map(usuario => (<Tarjeta key={usuario.id} usuario={usuario} />))}
+      <PiePagina />
     </div>
   );
 }

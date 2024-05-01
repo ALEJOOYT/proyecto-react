@@ -1,0 +1,42 @@
+:root {
+    --Blanco: hsl(0, 0%, 100%);
+    --Gris: hsl(0, 0%, 20%);
+    --Gris-Oscuro: hsl(0, 0%, 12%);
+    --Negro-Opaco: hsl(0, 0%, 8%);
+    --Verde: hsl(75, 94%, 57%);
+    --Fuente-Inter: 'Inter', sans-serif;
+}
+
+.Pie-Pagina {
+    background-color: var(--Gris-Oscuro);
+    color: var(--Blanco);
+    padding: 20px 0;
+}
+
+.Pie-Pagina-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.Pie-Pagina-item {
+    flex: 1 1 300px;
+    margin-bottom: 20px;
+}
+
+.Pie-Pagina-item h4 {
+    font-size: 1.1rem;
+}
+
+.Pie-Pagina-item p {
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+.logo {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}

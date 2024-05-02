@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Episodios.css';
 import TarjetaEpisodios from './ComponentesEpisodios/TarjetaEpisodios.jsx';
+import PiePagina from './ComponentesGenerales/PiePagina.jsx';
 
 function Episodios() {
     const [personaje, setPersonaje] = useState(null);
@@ -17,8 +18,11 @@ function Episodios() {
     }, []);
 
     return (
-        <div className='todo'>
-            {personaje && <TarjetaEpisodios key={personaje.id} usuario={personaje} />}
+        <div>
+            <div className='todo'>
+                {personaje && <TarjetaEpisodios key={personaje.id} usuario={personaje} />}
+            </div>
+            <PiePagina />
         </div>
     );
 }

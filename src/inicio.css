@@ -82,7 +82,7 @@ button:hover {
     }
     .dropdowns select,
     .dropdowns input {
-        padding: 6px 10px; /* Ajuste del padding para hacer más pequeños los elementos */
-        font-size: 12px; /* Reducción del tamaño de la fuente */
+        padding: 6px 10px;
+        font-size: 12px;
     }
 }

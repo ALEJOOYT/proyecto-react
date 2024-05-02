@@ -1,0 +1,88 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Blanco: hsl(0, 0%, 100%);
+    --Gris: hsl(0, 0%, 20%);
+    --Gris-Oscuro: hsl(0, 0%, 12%);
+    --Negro-Opaco: hsl(0, 0%, 8%);
+    --Verde: hsl(75, 94%, 57%);
+    --Fuente-Inter: 'Inter', sans-serif;
+}
+
+.todo {
+    background-color: var(--Negro-Opaco);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    padding-top: 5%;
+}
+
+.tarjeta {
+    width: 300px;
+    max-width: 90%;
+    margin: 20px;
+}
+
+button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    background-color: var(--Gris);
+}
+
+button:hover {
+    background-color: var(--Verde);
+    color: var(--Negro-Opaco);
+}
+
+.dropdowns {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    z-index: 9999;
+    background-color: var(--Gris);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.dropdowns select,
+.dropdowns input {
+    margin-right: 10px;
+    background-color: var(--Gris);
+    border-color: rgb(17, 17, 17);
+    color: var(--Blanco);
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+@media screen and (min-width: 768px) {
+    .tarjeta {
+        width: calc(33.33% - 40px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .todo{
+        padding-top: 20%;
+    }
+    .dropdowns select,
+    .dropdowns input {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+}

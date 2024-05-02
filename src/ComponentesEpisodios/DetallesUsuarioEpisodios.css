@@ -1,0 +1,45 @@
+/* Colores personalizados */
+:root {
+    --Blanco: hsl(0, 0%, 100%);
+    --Gris: hsl(0, 0%, 20%);
+    --Gris-Oscuro: hsl(0, 0%, 12%);
+    --Negro-Opaco: hsl(0, 0%, 8%);
+    --Verde: hsl(75, 94%, 57%);
+    --Fuente-Inter: 'Inter', sans-serif;
+}
+
+/* Estilos del componente */
+.detalles-episodio {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.detalles-episodio figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.detalles-episodio .nombre-titulo-episodio h4 {
+    color: var(--Verde);
+    font-size: 30px;
+    margin: 7px 0;
+}
+
+.detalles-episodio .nombre-titulo-episodio p {
+    font-size: 14px;
+    margin: 25px 0;
+}
+
+.detalles-episodio .nombre-titulo-episodio .estado-green {
+    color: green;
+}
+
+.detalles-episodio .nombre-titulo-episodio .estado-red {
+    color: red;
+}
+
+.detalles-episodio .nombre-titulo-episodio .estado-lightblue {
+    color: lightblue;
+}

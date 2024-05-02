@@ -51,7 +51,7 @@
     margin-right: 5px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1250px) {
     .Pie-Pagina .Pie-Pagina-contenido {
         padding-left: 10%;
         padding-right: 10%;
